@@ -1,7 +1,8 @@
 local supportedGames = {
     [12355337193] = "Murderers vs Sheriffs Duels",
     [205224386] = "Hide And Seek Extreme",
-    [9865958871] = "BIG Paintball 2"
+    [9865958871] = "BIG Paintball 2",
+    [537413528] = "Build A Boat For Treasure"
 }
 
 local function Notify(title, text, duration)
@@ -71,6 +72,9 @@ elseif gameId == 205224386 then
 elseif gameId == 9865958871 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Slgmoslav/sigmoslavhub/refs/heads/main/BIG%20Paintball%202.lua"))()
     Notify("Sigmoslav Hub", "Script loaded for BIG Paintball 2!", 5)
+elseif gameId == 537413528 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Slgmoslav/sigmoslavhub/refs/heads/main/Build%20A%20Boat%20For%20Treasure.lua"))()
+    Notify("Sigmoslav Hub", "Script loaded for Build A Boat For Treasure!", 5)
 else
     Notify("Unsupported Game", "This script is not supported in this game.", 5)
 end
